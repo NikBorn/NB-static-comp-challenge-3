@@ -12,13 +12,12 @@ body {
 }
 
 aside {
-  height: auto;
-  width: 15%;
   background-color: #354052;
   color: #8D98AA;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  width: 15%;
 }
 
 aside p {
@@ -78,6 +77,10 @@ aside p {
 .main-main-aside {
   color: #546174;
   padding-top: 20px;
+}
+
+label {
+  font-size: 12px;
 }
 
 .social-cntr,
@@ -140,6 +143,7 @@ header,
 
 .search-input {
   border: none;
+  width: 100%;
 }
 
 .profile-menu,
@@ -163,7 +167,7 @@ header,
 }
 
 input {
-  width: 100%;
+  margin-right: 10px;
 }
 
 .header-nav {
@@ -275,12 +279,10 @@ h5 {
 .graphs {
   display: flex;
   background-color: #EDF2F6;
-  height: 220px;
 }
 
 .circle-graphs {
   width: 60%;
-  height: 220px;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -317,14 +319,14 @@ h5 {
 }
 
 .graph-number {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
 }
 
 .bar-graph {
   width: 40%;
-  background-color: magenta;
-  height: 190px;
+  background-image: url("images/graph.png");
+  background-size: cover;
 }
 
 .totals-container {
@@ -370,7 +372,6 @@ h5 {
 
 .main-section {
   background-color: #EDF2F6;
-  height: 610px;
   padding-top: 40px;
   display: flex;
   flex-direction: row;
@@ -378,7 +379,6 @@ h5 {
 
 .job-descript {
   width: 70%;
-  height: 500px;
   background-color: #EDF2F6;
   display: flex;
   justify-content: center;
@@ -387,8 +387,9 @@ h5 {
 
 .job-listing {
   width: 90%;
-  height: 500px;
+  height: 750px;
   background-color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .job-listing-header {
@@ -401,9 +402,45 @@ h5 {
   padding-left: 20px;
 }
 
+.job-listing-body {
+  display: flex;
+}
+
 .job-listing-header p {
   margin-right: 10px;
 }
+
+.job-body-title {
+  width: 25%;
+}
+
+.job-body-result {
+  width: 75%;
+  padding-right: 5px;
+}
+
+.job-body-result p {
+  color: #8D94A5;
+  border-bottom: 2px solid #D4D8DB;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 12px;
+  width: 90%;
+}
+
+.main-title {
+  color: #8D94A5;
+  border-bottom: 2px solid #D4D8DB;
+  font-size: 12px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.description {
+  padding-bottom: 72px;
+}
+
 
 .edit-job-btn {
   width: 64px;
@@ -425,14 +462,13 @@ h5 {
   margin-left: 2px;
 }
 
-.link-section {
-  min-width: 100%;
-  height: 500px;
-  background-color: orange;
+.link-area {
+  width: 30%;
+  background-color: #EDF2F6;
 }
 
 .link-btn {
-  width: 100%;
+  width: 90%;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -465,4 +501,67 @@ h5 {
 
 .linkedin-btn {
   background-color: #017EBD;
+}
+
+.resumes-cntr,
+.button-widget-cntr,
+.job-post-cntr {
+  width: 90%;
+  color: #767C85;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.resumes-header,
+.button-widget-header,
+.job-post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resumes-header img,
+.button-widget-header img,
+.job-post-header img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.resumes-cntr p,
+.button-widget-cntr p,
+.job-post-cntr p {
+  font-size: 14px;
+}
+
+.resumes-area,
+.button-widget-area,
+.link-text-area {
+  height: 45px;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.resumes-copy,
+.button-widget-copy,
+.link-text-copy {
+  width: 75%;
+}
+
+.button-widget-btn,
+.link-area-btn {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #43B8BE;
 }
