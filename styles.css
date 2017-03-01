@@ -1,8 +1,100 @@
-* {
+*,
+*::before,
+*::after
+ {
   box-sizing: border-box;
   margin: 0px;
+  font-family: 'Open Sans';
 }
 
+body {
+  display: flex;
+}
+
+aside {
+  height: auto;
+  width: 15%;
+  background-color: #354052;
+  color: #8D98AA;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside p {
+  font-size: 14px;
+}
+
+.employee-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.employee-picture {
+  border-radius: 100%;
+  background-image: url("images/albert_einstein_head.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.aside3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.aside-cntr {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+
+.aside-icon{
+  background-image: url("images/home-4-32.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.main-aside,
+.admin,
+.categories {
+  width: 90%;
+}
+
+.categories-main-aside,
+.admin-main-aside,
+.main-main-aside {
+  color: #546174;
+  padding-top: 20px;
+}
+
+.social-cntr,
+.calendar-cntr {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding-bottom: 20px;
+}
+
+.admin-cb {
+  background-color: yellow;
+}
+
+
+.right-side {
+  width: 85%;
+}
 
 header,
 .search-area,
@@ -10,12 +102,6 @@ header,
 .graphs,
 .main-section {
   width: 100%
-}
-
-
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 .search-area {
@@ -146,17 +232,17 @@ h5 {
 }
 
 .open-btn {
-    width: 90px;
-    height: 34px;
-    border-color: #D4D8DB;
-    border-style: solid;
-    background-color: transparent;
-    border-radius: 50px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 0px;
+  width: 90px;
+  height: 34px;
+  border-color: #D4D8DB;
+  border-style: solid;
+  background-color: transparent;
+  border-radius: 50px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0px;
 }
 
 .trash-btn {
@@ -187,11 +273,196 @@ h5 {
 }
 
 .graphs {
+  display: flex;
   background-color: #EDF2F6;
-  height: 140px;
+  height: 220px;
+}
+
+.circle-graphs {
+  width: 60%;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.applicants-circle,
+.interviews-circle,
+.forwards-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: #D4D8DB;
+  border-style: solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-width: 10px;
+}
+
+.applicants-circle {
+  border-color: #44B4C0 #44B4C0 #D4D8DB #D4D8DB;
+}
+
+.interviews-circle {
+  border-color: #16A4F9 #16A4F9 #16A4F9 #D4D8DB;
+}
+
+.forwards-circle {
+  border-color: #FF00FF #D4D8DB #D4D8DB #D4D8DB;
+}
+
+.graph-number {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bar-graph {
+  width: 40%;
+  background-color: magenta;
+  height: 190px;
+}
+
+.totals-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #EDF2F6;
+}
+
+.circle-tots-cntr,
+.bar-totals-cntr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-tots-cntr {
+  width: 60%;
+}
+
+.bar-totals-cntr {
+  width: 40%;
+}
+
+.bar-totals,
+.circle-totals {
+  height: 45px;
+  border-color: #D4D8DB;
+  border-style: solid;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-totals {
+  width: 300px;
+}
+
+.bar-totals {
+  width: 200px;
 }
 
 .main-section {
-  background-color: grey;
-  height: 310px;
+  background-color: #EDF2F6;
+  height: 610px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.job-descript {
+  width: 70%;
+  height: 500px;
+  background-color: #EDF2F6;
+  display: flex;
+  justify-content: center;
+}
+
+
+.job-listing {
+  width: 90%;
+  height: 500px;
+  background-color: #FFFFFF;
+}
+
+.job-listing-header {
+  background-color: #6F7E95;
+  height: 50px;
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.job-listing-header p {
+  margin-right: 10px;
+}
+
+.edit-job-btn {
+  width: 64px;
+  height: 28px;
+  background-color: #7886A0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-job-btn p {
+  font-size: 12px;
+  margin: 2px;
+}
+
+.edit-job-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 2px;
+}
+
+.link-section {
+  min-width: 100%;
+  height: 500px;
+  background-color: orange;
+}
+
+.link-btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.link-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.link-text {
+  display: flex;
+  justify-content: center;
+  width: 190px;
+  font-size: 14px;
+}
+
+.facebook-btn {
+  background-color: #4C72C4;
+}
+
+.twitter-btn {
+  background-color: #01A8EF;
+}
+
+.linkedin-btn {
+  background-color: #017EBD;
 }
