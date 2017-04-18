@@ -1,7 +1,6 @@
 *,
 *::before,
-*::after
- {
+*::after {
   box-sizing: border-box;
   font-family: 'Open Sans';
   margin: 0px;
@@ -61,14 +60,15 @@ aside p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 15px;
-  margin-right: 20px;
+  margin-right: 18px;
   width: 15px;
+  margin-left: 10px;
 }
 
 .main-aside,
 .admin,
 .categories {
-  width: 90%;
+  width: 100%;
 }
 
 .categories-main-aside,
@@ -78,8 +78,21 @@ aside p {
   padding-top: 20px;
 }
 
+.categories-main-aside p,
+.admin-main-aside p,
+.main-main-aside p {
+  margin-left: 10px;
+}
+
 label {
   font-size: 12px;
+}
+
+.admin-cb,
+.design-cb,
+.executive-cb,
+.hr-cb {
+  margin-left: 10px;
 }
 
 .social-cntr,
@@ -200,6 +213,7 @@ h5 {
 
 .preview-post {
   color: #16A4F9;
+  margin-left: 2px;
 }
 
 .header-btns-container {
@@ -313,9 +327,16 @@ h5 {
 }
 
 .bar-graph {
-  background-image: url("images/graph.png");
   background-size: cover;
   width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-graph img {
+  width: 90%;
+  height: auto;
 }
 
 .totals-container {
@@ -539,6 +560,11 @@ h5 {
   width: 100%;
 }
 
+.button-widget-btn,
+.link-area-btn {
+  color: #FFFFFF;
+}
+
 .button-widget-copy,
 .resumes-copy,
 .link-text-copy {
@@ -553,4 +579,18 @@ h5 {
   height: 100%;
   justify-content: center;
   width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+
+  aside {
+    display: none;
+  }
+
+  .right-side {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
 }
